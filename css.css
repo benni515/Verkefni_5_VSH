@@ -1,3 +1,54 @@
 body {
-	background-color: black;
+	
+}
+
+.transition {
+	background: black;
+	width: 200px;
+	height: 200px;
+	transition: .95s background ease-out;
+
+	position: relative;
+	-webkit-animation: popp 2s 1;
+	-webkit-animation-direction; alternate;
+	animation: popp 5s 1;
+	animation-direction: alternate;
+}
+
+.transition:hover {
+	background: white;
+	height: 200px;
+	width: 200px;
+}
+
+@-webkit-keyframes popp{
+	0% {background-color: black; left: 0px; top: -500px;}
+	100% {background-color: black; left: 0px; top: 0px;}	
+}
+
+.image {
+	background: url(cowboy.jpg);
+	width: 250px;
+	height: 190px;
+	opacity: 0.1;
+	transition: opacity 2s ease-in;
+}
+
+.image:hover {
+	opacity: 1;
+	background: url(cowboy.jpg);
+}
+
+.fade {
+	width: 200px;
+	height: 200px;
+	background: black;
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
+
+.fade:hover {
+    opacity: 0;
 }
